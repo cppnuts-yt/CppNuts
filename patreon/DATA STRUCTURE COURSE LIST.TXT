@@ -1,0 +1,16 @@
+TREE:
+    1. Binary/ N-ary Trees
+    2. Binary Search Tree 
+    3. Heaps/Priority Queues
+    4. AVL Tree
+    5. Red Black Tree
+
+ADVANCE DATA STRUCTURES:
+    1. Trie (Keyword Tree)
+    2. Segment Trees
+    3. Fenwick (Binary Indexed) Trees
+    4. Suffix Trees
+    5. Suffix Arrays
+
+DISJOINT DATA STRUCTURES:
+    1. Basics of Disjoint Data Structures 

@@ -1,14 +1,14 @@
-TOPIC: Semaphore In C++
+// TOPIC: Semaphore In C++
 
-POINTS:
-1.0 Semaphore is a signaling mechanism (T1 saying i am done T2 please carry on).
-2.0 There are two types of semaphores 
-    a. Binary Semaphore
-    b. Counting Semaphore
+// POINTS:
+// 1.0 Semaphore is a signaling mechanism (T1 saying i am done T2 please carry on).
+// 2.0 There are two types of semaphores 
+//     a. Binary Semaphore
+//     b. Counting Semaphore
 
-BINARY SEMAPHORE:
-1.0 Binary Semaphore means there are two state 0 or 1.
-2.0 
+// BINARY SEMAPHORE:
+// 1.0 Binary Semaphore means there are two state 0 or 1.
+// 2.0 
 
 #include <thread>
 #include <mutex>

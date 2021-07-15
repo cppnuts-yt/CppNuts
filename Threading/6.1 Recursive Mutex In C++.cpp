@@ -13,7 +13,7 @@
 // BOTTOM LINE:
 // 0. It is similar to mutex but have extra facitility that it can be locked multiple time by same thread.
 // 1. If we can avoid recursive_mutex then we should becuase it brings overhead to the system.
-// 2. It can be used in loops also.
+2. It can be used in loops also.;lpo09
 
 #include <iostream>
 #include <thread>
