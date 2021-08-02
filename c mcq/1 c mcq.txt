@@ -1,0 +1,7 @@
+#include <stdio.h>
+
+void main() {
+	int x = 0;
+	void v = 0;
+	float f = 0;
+}
