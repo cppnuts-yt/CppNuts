@@ -5,30 +5,30 @@
 
 using namespace std;
 
-class Solution{
+class Solution {
   public:
-    int maxdepth;
-    Solution():maxdepth{0} {}
+    int firstDepth;
+    Solution():firstDepth{0} {}
 
     bool check(Node *root) {
         return helper(root, 0);
     }
     
-    bool helper(Node *root, int tmp)
+    bool helper(Node *root, int currentDepth)
     {
         if(!root) return true;
         
         if(root->left == nullptr && root->right == nullptr) {
-            if(maxdepth == 0) {
-                maxdepth = tmp;
+            if(firstDepth == 0) {
+                firstDepth = currentDepth;
                 return true;
             }else {
-                return maxdepth == tmp;
+                return firstDepth == currentDepth;
             }
         }
         
-        if(!helper(root->left, tmp+1)) return false;
-        if(!helper(root->right, tmp+1)) return false;
+        if(!helper(root->left, currentDepth+1)) return false;
+        if(!helper(root->right, currentDepth+1)) return false;
         
         return true;
     }
