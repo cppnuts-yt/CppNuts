@@ -2,7 +2,7 @@
 using namespace std;
 
 struct TreeNode {
-    int val;
+     int val;
     TreeNode *left;
     TreeNode *right;
     TreeNode() : val(0), left(nullptr), right(nullptr) {}
@@ -13,10 +13,10 @@ struct TreeNode {
 class Solution {
   public:
 
-    int helper(TreeNode* root, int& maxDia) {
+    int getHeight(TreeNode* root, int& maxDia) {
         if(!root) return 0;
-        int lh = helper(root->left, maxDia);
-        int rh = helper(root->right, maxDia);
+        int lh = getHeight(root->left, maxDia);
+        int rh = getHeight(root->right, maxDia);
         int currentDia = lh + rh + 1;
         maxDia = max(maxDia, currentDia);
         return max(lh, rh) + 1;
@@ -24,13 +24,12 @@ class Solution {
 
     int diameter(TreeNode* root) {
         int maxDia = INT_MIN; 
-        helper(root, maxDia);
+        getHeight(root, maxDia);
         return maxDia;
     }
     
 };
 
 int main() {
-
     return 0;
 }
