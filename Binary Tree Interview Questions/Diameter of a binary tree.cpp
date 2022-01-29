@@ -17,7 +17,7 @@ class Solution {
         if(!root) return 0;
         int lh = getHeight(root->left, maxDia);
         int rh = getHeight(root->right, maxDia);
-        int currentDia = lh + rh + 1;
+        int currentDia = lh + rh;
         maxDia = max(maxDia, currentDia);
         return max(lh, rh) + 1;
     }
