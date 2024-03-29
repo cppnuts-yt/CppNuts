@@ -13,8 +13,8 @@
 // 2. vtable is a static table which gets constructed at compile time.
 // 3. Every class has it's own vtable.
 // 4. vtable store address (with some other info) of virtual functions of own class OR parent class.
-// 5. parent class vtable is copied to child class vtable and then if child class overrides any function then that
-//    function address is replaced with child class function.
+// 5. parent class vtable is copied to child class vtable and then if child class overrides any virtual function 
+//    then that function address is replaced with child class function.
 
 #include <iostream>
 using namespace std;
