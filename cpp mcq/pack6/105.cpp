@@ -7,7 +7,7 @@ public:
 	String() {}
 	String(const char* str) {
 		int strLen = sizeof(str);
-		while(strLen --> 0){
+		while(strLen-- > 0){
 			cout << str[strLen];
 		}
 	}

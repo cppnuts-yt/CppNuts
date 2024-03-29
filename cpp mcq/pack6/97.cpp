@@ -2,7 +2,7 @@
 using namespace std;
 
 int &myFun() {
-  static int stk = 100;
+  int stk = 100;
   return stk;
 }
  

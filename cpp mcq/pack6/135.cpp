@@ -3,8 +3,10 @@ using namespace std;
 
 class P {
 public:
-	P ()           { cout << "P's constructor" << endl; }
-	P (const P &p) { cout << "P's Copy constructor" << endl; }
+	P() { cout << "P's ctor" << endl; }
+	P(const P &p) { 
+		cout << "P's Copy ctor" << endl;
+	}
 	P& operator= (const P &p) {
 		if(this == &p) return *this;
 		cout << "P's Assignment Operator" << endl;
@@ -15,7 +17,10 @@ public:
 class Q {
 	P p;
 public:
-	Q(P &p) { Q::p=p; cout << "Q's constructor" << endl; }
+	Q(P &p) { 
+		Q::p=p;
+		cout << "Q's constructor" << endl;
+	}
 };
 
 int main() {

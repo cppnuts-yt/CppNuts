@@ -7,11 +7,11 @@ public:
     }
 };
 
-typedef Base* POINTER;
+typedef Base* BasePointer;
 
 int main()
 {
-   POINTER t1, t2;
+   BasePointer t1, t2;
    return 0;
 }
 

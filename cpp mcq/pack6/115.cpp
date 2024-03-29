@@ -4,12 +4,12 @@ using namespace std;
 template <int i>
 int myfun()
 {
-	i = 20;
 	cout << i << endl; 
+	return i;
 }
 
 int main() {
-	myfun<5>();
+	cout << myfun<5>();
 	return 0;
 }
 

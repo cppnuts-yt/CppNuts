@@ -12,7 +12,8 @@ class B: public A { };
 
 class C: public A { };
 
-class D: virtual public B, virtual public C {};
+class D: virtual public B, 
+		 virtual public C {};
 
 int main(void)
 {

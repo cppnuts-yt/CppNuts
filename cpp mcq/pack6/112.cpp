@@ -4,9 +4,9 @@ using namespace std;
 class P {
 public:
 	P& operator=(const P&a)	{
-		cout << "Assignment Operator Called" << endl;
-		return *this;
-	}
+		cout << "Assign Operator Called" << endl;
+	return *this;
+  }
 };
 
 class Q { P a[2]; };

@@ -7,7 +7,7 @@ public:
 	Base (int x) { _x = x; }
 	int getValue() { return _x; }
 };
-`
+
 int main() {
 	Base b(10);
 	cout << b.getValue() << endl;

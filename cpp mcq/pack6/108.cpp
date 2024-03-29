@@ -24,4 +24,3 @@ int main() {
 // C. Run Time Error
 // D. Garbage Value
 // E. 3040
-// F. 

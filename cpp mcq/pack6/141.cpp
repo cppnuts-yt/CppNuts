@@ -15,12 +15,6 @@ struct Factorial<0>
 
 int main() {
 	int x = Factorial<4>::value; // == 24
-    cout << x << endl;
+  cout << x << endl;
 	return 0;
 }
-
-// A. Base::fun()
-// B. Compile Time Error
-// C. Run Time Error
-// D. Garbage Value
-// E. Child::fun()

@@ -2,7 +2,7 @@
 using namespace std;
 
 // int size is 4 Byte
-// pointer size is 4 Byte
+// pointer size is 8 Byte
 
 
 class A {
@@ -20,10 +20,3 @@ int main(void)
 	cout << sizeof(D) << endl;
 	return 0;
 }
-
-// A. 40
-// B. Compile Time Error
-// C. Run Time Error
-// D. 88
-// E. 48
-// F. 84

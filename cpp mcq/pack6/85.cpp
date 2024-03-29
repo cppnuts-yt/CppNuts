@@ -18,7 +18,7 @@ class C: public B {};
 int main(void)
 {
 	C c;
-	c.call();
+	c.A::call();
 	return 0;
 }
 

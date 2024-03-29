@@ -4,12 +4,14 @@ using namespace std;
 class Base {
 	int &_x;
 public:
-	Base(int x) { _x = x; }
+	Base(int& x):_x {x} { }
 	int getValue() { return _x; }
 };
 
 int main() {
-	Base b(10);
+	//Base b(10);
+	int p = 10;
+	Base b(p);
 	cout << b.getValue() << endl;
 	return 0;
 }

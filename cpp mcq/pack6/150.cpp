@@ -7,7 +7,7 @@ int add(int x, int y=2, int z=3) {
 
 int main() {
 	int a = add(1,2,3);
-	int b = add(2, ,3);
+	int b = add(2,2,4);
 	int c = add(4,5);
 	cout << a << b << c << endl;
 	return 0;

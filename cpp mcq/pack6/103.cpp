@@ -7,7 +7,7 @@ class C {public: C() { cout << "C"; }};
 
 int main(void)
 {
-	class A a;
+	A a;
 	B b;
 	class C c;
 	return 0;

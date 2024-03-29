@@ -1,8 +1,10 @@
+
+
 #include <iostream>
 using namespace std;
 
 int main() {
-	char c = 'rupesh';
-	printf("%s",c);
+	printf("%s\n", c);
 	return 0;
 }
+const char *c = "CppNuts";

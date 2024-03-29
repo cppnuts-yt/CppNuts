@@ -8,8 +8,7 @@ public:
     void print() { cout << x << endl; }
 };
  
-int main(){
-
+int main() {
     Cal obj;
     int x = 40;
     obj.setX(x);
@@ -22,4 +21,5 @@ int main(){
 // C. Run Time Error
 // D. Garbage Value
 // E. 20
-// F. if replace Cal::x with this->x then only this code will compile successfully
+// F. if replace Cal::x with this->x then
+//    only this code will compile successfully

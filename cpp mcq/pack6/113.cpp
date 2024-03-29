@@ -17,27 +17,22 @@ using namespace std;
 
 class P {
 public:
-    P& operator=(const P&a) {
-        if(this == &a) return *this;
-        cout << "Assignment Operator Called" << endl;
-        return *this;
-    }
+  int *x;
+  P():x(nullptr) {}
+  P(int *x):x(x) {}
+  P& operator=(const P&rhs) {
+    if(this == &rhs) return *this;
+      if(x) delete x;
+      x = new int(*rhs.x);
+      return *this;
+  }
+  ~P() { delete x; }
 };
 
-class Q {  P a[2]; };
-
 int main() {
-    Q q1, q2;
-    q2 = q1; q1 = q1;
+    int *a = new int(10);
+    P q1, q2(a);
+    q1 = q2;
+    q1 = q2;
     return 0;
 }
-
-// A. Assignment Operator Called
-// B. Compile Time Error
-// C. Run Time Error
-// D. Assignment Operator Called
-//    Assignment Operator Called
-// E. Assignment Operator Called
-//    Assignment Operator Called
-//    Assignment Operator Called
-//    Assignment Operator Called

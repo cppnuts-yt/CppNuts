@@ -4,8 +4,8 @@ using namespace std;
 int main()
 {
     int x = 1 , y = 1;
-    cout << ( ++x  || ++y ) << endl;   // outputs 1;
-    cout << x << " " << y;             // x = 2 , y = 1;
+    cout << ( ++x  || ++y ) << endl;   
+    cout << x << " " << y;
     return 0;
 }
 

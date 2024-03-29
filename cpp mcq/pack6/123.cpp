@@ -15,18 +15,16 @@ using namespace std;
 
 
 class Number {
-	int x;
+	static int y;
 public:
-	Number():Number(0) {}
-	Number(int x):x{x} {}
-	int getX() { return x; }
-	void setX(int x) { Number::x = x; }
+	void setY (int tmp) { y = tmp; }
 };
 
+int Number::y = 0;
+
 int main() {
-	const Number n;
-	n.setX(10);
-	cout << n.getX() << endl;
+	Number n;
+	n.setY(10);
 	return 0;
 }
 

@@ -4,8 +4,8 @@ using namespace std;
 class GirlFriend {
 	int x;
 public:
-	GirlFriend() { cout << "GirlFriend Constructed" << endl; }
-	~GirlFriend() { cout << "GirlFriend Destructed" << endl; }
+	GirlFriend() { cout << "GF Con" << endl; }
+	~GirlFriend() { cout << "GF Des" << endl; }
 };
 
 int main() {
@@ -13,13 +13,13 @@ int main() {
 	return 0;
 }
 
-// A. GirlFriend Constructed
-//    GirlFriend Destructed
+// A. GF Cons
+//    GF Des
 
 // B. Compile Time Error
 
 // C. Run Time Error
 
-// D. GirlFriend Constructed
+// D. GF Cons
 
-// E. GirlFriend Destructed
+// E. GF Des

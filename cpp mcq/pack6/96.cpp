@@ -14,7 +14,7 @@ class B : public A {
  
 int main(void)
 {
-    B *b;
+    B b;
     A *a;
     cout << "Success" << endl;
     return 0;

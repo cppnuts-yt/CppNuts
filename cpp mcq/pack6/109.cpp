@@ -8,12 +8,12 @@ public:
  
 class Y : private X {
 public:
-    void call() { cout << "Y called"; }
+    void call() { X::call(); }
 };
  
 class Z : public Y {
 public:
-    void call() { X::call(); }
+    void call() { Y::call(); }
 };
  
 int main()

@@ -7,6 +7,7 @@ class Base {
 	int x;
 	static int stk;
 };
+
 int Base::stk=0;
 
 int main() {

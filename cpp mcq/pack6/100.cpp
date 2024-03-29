@@ -4,7 +4,10 @@ using namespace std;
 class Base
 {
 public:
-	Base()  { cout<< "Constructor Called" << endl; }
+	Base()  
+	{ 
+		cout<< "Constructor Called" << endl;
+	}
 };
 
 int main()
@@ -18,12 +21,8 @@ int main()
 // A. Begin
 //    Constructor Called
 //    End	  
-
 // B. Compile Time Error
-
 // C. Run Time Error
-
 // D. Garbage Value
-
 // E. Begin
 //    End	

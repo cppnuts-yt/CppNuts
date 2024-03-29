@@ -4,7 +4,9 @@ using namespace std;
 class Base {
 public:
 	Base() { fun(); }
-	virtual void fun() { cout << "Base" << endl; }
+	virtual void fun() { 
+		cout << "Base" << endl;
+	}
 };
 
 class Derived : public Base {

@@ -10,7 +10,7 @@ public:
 };
 
 int main() {
-	main m(10);
+	class main m(10);
 	cout << m.getX() << endl;
 	return 0;
 }

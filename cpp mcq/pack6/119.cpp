@@ -3,16 +3,16 @@ using namespace std;
 
 class Test
 {
-private:
-	~Test() { cout << "Destructor" << endl; }
+public:
+	Test () {cout << "Ctor" << endl;}
 };
 
 int main()
 { 
-	Test t; 
+	Test t;
 }
 
-// A. Destructor
+// A. Ctor
 // B. Compile Time Error
 // C. Run Time Error
 // D. Garbage Value

@@ -16,7 +16,8 @@
             "externalConsole": false,
             "MIMode": "lldb",
             "preLaunchTask": "C/C++: g++-11 build active file",
-            "targetArchtecture": "x86_64"
+            "targetArchtecture": "x86_64",
+            "miDebuggerPath": "c:\\cygwin64\\bin"
         }
     ]
 }

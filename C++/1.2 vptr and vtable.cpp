@@ -22,6 +22,7 @@ using namespace std;
 class Base {
 public:
     virtual void fun() { }
+    void boo() {}
 };
 
 class Derived : public Base {

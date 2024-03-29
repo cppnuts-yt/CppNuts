@@ -19,7 +19,10 @@ int main() {
 	return 0;
 }
 
-A. 10 0
-B. 10 10
-C. Run Time Error
-D. Compile Time Error
+// A. 10
+// B. 10 10
+// C. Run Time Error
+// D. Compile Time Error
+
+
+

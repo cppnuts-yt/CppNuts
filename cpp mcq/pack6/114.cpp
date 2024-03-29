@@ -18,7 +18,7 @@ template <int N>
 class Base {
 	int arr[N];
 public:
-	virtual void fun() { cout << "Base::fun()"; }
+	void fun() { cout<<"Base::fun()"; }
 };
 
 class Child : public Base<5> {

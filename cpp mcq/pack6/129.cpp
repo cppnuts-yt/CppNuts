@@ -18,11 +18,12 @@ using namespace std;
 
 class Test {
 public:
-	Test() { cout <<"Constructor called" << endl; }
+	Test() { cout <<"Constructor" << endl; }
 
-	~Test() { cout <<"Destructor called" << endl; }
-	void* operator new(size_t size) {
-		cout << "New Fun Called" << endl;
+	~Test() { cout <<"Destructor" << endl; }
+
+	void* operator new(size_t size) { 
+		cout << "New Fun" << endl;
 		void *storage = malloc(size);
 		return storage;
 	}
@@ -33,11 +34,11 @@ public:
 	}
 };
 
-
 int main() {
 	Test *m = new Test();
 	delete m;
 	return 0;
 }
 
-// Note down the output or keep in your mind palace
+// Note down the output or 
+// keep in your mind palace

@@ -6,8 +6,8 @@ class A {
 	int y;
 public:
 	A(int x=0, int y=0):x{x},y{y} {}
-	A& changeX() { x++; return *this; }
-	A  changeY() { y++; return *this; }
+	A incX() { x++; return *this; }
+	A incY() { y++; return *this; }
 	int getX() { return x; }
 	int getY() { return y; }
 };
@@ -15,7 +15,7 @@ public:
 int main(void)
 {
 	A a;
-	a.changeX().changeY().changeX().changeY().changeX();
+	a.incX().incY().incX().incY().incX();
 	cout << a.getX() << a.getY();
 	return 0;
 }
@@ -25,4 +25,4 @@ int main(void)
 // C. Run Time Error
 // D. 32
 // E. 31
-// F. 21
+// F. 10

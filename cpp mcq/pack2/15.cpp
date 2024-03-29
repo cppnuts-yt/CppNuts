@@ -10,7 +10,9 @@ public:
 class Child: public Base {
 	int _y;
 public:
-	Child(int x, int y):_x{x}, _y{y} { cout << "Child Initialize x and y" << endl; }
+	Child(int x, int y): Base{x}, _y{y} { 
+		cout << "Child Initialize x and y" << endl;
+	}
 };
 
 int main() {

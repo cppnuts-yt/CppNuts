@@ -2,10 +2,10 @@
 using namespace std;
 
 // int is 4 Byte
-// pointer size is 4 Byte
+// pointer size is 8 Byte
 
 class A {
-	int arr[10];
+	char x;
 };
 
 class B: virtual public A { };
@@ -16,12 +16,9 @@ class D: public B, public C {};
 
 int main(void)
 {
-	cout << sizeof(D) << endl;
+	cout << "A " << sizeof(A) << endl;
+	cout << "B " << sizeof(B) << endl;
+	cout << "C " << sizeof(C) << endl;
+	cout << "D " << sizeof(D) << endl;
 	return 0;
 }
-
-// A. 40
-// B. Compile Time Error
-// C. Run Time Error
-// D. 88
-// E. 48

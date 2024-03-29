@@ -17,11 +17,11 @@ public:
  
 int main(void)
 {
-    cout << sizeof(A) << " " <<sizeof(B) << endl;
+    cout<<sizeof(A)<<" "<<sizeof(B)<<endl;
     return 0;
 }
 
-// A. 4 8
+// A. 4 16
 // B. Compile Time Error
 // C. Run Time Error
 // D. Garbage Value

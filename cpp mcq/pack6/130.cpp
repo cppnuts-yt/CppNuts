@@ -1,25 +1,22 @@
 #include <iostream>
 using namespace std;
 
-// initializing x from derived is wrong we can use Base(i), but direct is not allowed.
+                                                // initializing x from derived is wrong we can use Base(i), but direct is not allowed.
 
-class Base 
-{
+class Base {
 public:
 	int x;
 public:
 	Base (int i){ x = i;}
 };
 
-class Derived : public Base 
-{
+class Derived : public Base {
 public:
-	Derived (int i) : x{i} { }
+	Derived (int i) : Base{i} { }
 	void print() { cout << x ; }
 };
 
-int main()
-{
+int main() {
 	Derived d(10);
 	d.print();
 }

@@ -2,29 +2,22 @@
 using namespace std;
  
 class BaseA { 
- public:
-    BaseA(int ii = 0) : i(ii) {}
-    void show() { cout << "i = " << i << endl;}
- private:
-    int i;
+public:
+  int i;
+  BaseA(int ii = 0) : i(ii) {}
 };
 
 class BaseB {
- public:
-    BaseB(int xx) : x(xx) {}
-    operator BaseA() const { return BaseA(x); }
- private:
-    int x;
+public:
+  int x;
+  BaseB(int xx) : x(xx) {}
+  operator BaseA() const {
+    return BaseA(x);
+  }
 };
  
-void fun(BaseA a)
-{  a.show(); }
- 
 int main() {
-  BaseB b(10);
-  fun(b);
-  fun(20);
+  BaseA a = BaseB(10);
+  cout << a.i << endl;
   return 0;
 }
-
-

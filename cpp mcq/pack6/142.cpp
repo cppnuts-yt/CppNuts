@@ -12,23 +12,23 @@ using namespace std;
 
 class Parent {
 public:
-    int fun()      { cout << "Parent::fun() called"; }
-    int fun(int i) { cout << "Parent::fun(int i) called"; }
+    void fun(int a, int b) {
+        cout << "Parent::fun() called";
+    }
+    void fun(int i) {
+        cout << "Parent::fun(int i) called";
+    }
 };
 
 class Child: public Parent {
 public:
-    int fun(int x)   { cout << "Child::fun(char ) called"; }
+    void fun(int x) {
+        cout << "Child::fun(char ) called";
+    }
 };
- 
-int main() {
 
+int main() {
     Child c;
-    c.Parent::fun(12);
+    c. fun(1,2);
     return 0;
 }
-
-// A. 10
-// B. Compile Time Error
-// C. Run Time Error
-// D. Garbage Value
