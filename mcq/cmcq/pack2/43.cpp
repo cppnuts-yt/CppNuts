@@ -1,9 +1,7 @@
-
-
 #include <iostream>
 using namespace std;
 
-int x = 10;
+int x = 100; 
 
 void fun(int x) {
     cout << ::x + x << endl;

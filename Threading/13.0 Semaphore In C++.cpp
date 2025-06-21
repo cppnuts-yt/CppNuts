@@ -17,7 +17,7 @@
 #include <condition_variable>
 using namespace std;
 
-class Semaphore{
+class Semaphore {
 public:
 	void insert(const std::vector<int>& Vec) {
 		down();
@@ -47,13 +47,13 @@ private:
 
 
 int main() {
-	std::thread con(&Semaphore::remove,&sem);
+	std::thread con(&Semaphore::remove, &sem);
 	std::vector<std::thread> threadVec;
 	for(int i=0; i<10; ++i){
 		std::vector<int> job = {i*1, i*2, i*3, i*4};
 		threadVec.push_back(std::thread(&Semaphore::insert,&sem,std::ref(job)));
 	}
-	for(auto& thread: threadVec){
+	for(auto& thread: threadVec) {
 		thread.join();
 	}
 	con.join();

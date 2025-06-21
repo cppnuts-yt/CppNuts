@@ -1,3 +1,7 @@
+#include <iostream>
+
+using namespace std;
+
 class Solution {
   public:
   
@@ -15,3 +19,9 @@ class Solution {
         else return -1;
     }
 };
+
+int main () {
+    Solution s;
+    std::cout << s.findPosition(4) ;
+    return 0;
+}

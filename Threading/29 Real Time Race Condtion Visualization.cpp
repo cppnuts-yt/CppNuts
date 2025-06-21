@@ -3,15 +3,12 @@
 #include <mutex>
 using namespace std;
 
-int counter;
-int times = 1000000;
-std::mutex m;
+std::atomic<int> counter;
+int times = 100000;
 
 void run() {
     for(int i=0; i<times; ++i) {
-      m.lock();
       ++counter;
-      m.unlock();
     }
 }
 

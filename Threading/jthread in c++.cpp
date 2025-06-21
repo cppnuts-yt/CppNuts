@@ -74,7 +74,7 @@ void f2(int& n)
         std::this_thread::sleep_for(10ms);
     }
 }
- 
+  
 class foo
 {
 public:

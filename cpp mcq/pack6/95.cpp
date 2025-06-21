@@ -4,18 +4,22 @@ using namespace std;
 class A
 {
 public:
-    virtual void show(int) = 0;
+    virtual void show() = 0;
 };
- 
+
+void A::show() {
+    std::cout << "A::show" << std::endl;
+}
+
 class B : public A { 
-   int _x;
    public:
-   void show() { cout << "show" << endl; }
+   void show() { cout << "B::show" << endl; 
+    A::show();
+   }
 };
  
-int main(void)
-{
+int main() {
     B b;
-    b.show(10);
+    b.show();
     return 0;
 }

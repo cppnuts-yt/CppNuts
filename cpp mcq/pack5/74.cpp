@@ -6,7 +6,7 @@ int main() {
 	switch(i) {
 		case 1:
 			int x = 10;
-			cout << x << endl; 
+			cout << x << endl;
 			break;
 		default:
 			cout << "default" << endl;

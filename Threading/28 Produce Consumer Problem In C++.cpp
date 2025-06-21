@@ -26,7 +26,7 @@ void producer() {
     }
 }
 
-void consumer(){ 
+void consumer() { 
     while(1){ 
       signal_to_consumer.acquire();
       cout<<"Consumed = ";

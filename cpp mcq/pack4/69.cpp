@@ -13,14 +13,7 @@ public:
 
 int main() {
 	Base b;
-	cout << b.fun() << endl;
+	char c = b.fun();
+	int x = b.fun();
 	return 0;
 }
-
-// A. Comile Time Error
-// B. RunTime Error
-// C. C
-// D. 10
-
-
-// Easy Question

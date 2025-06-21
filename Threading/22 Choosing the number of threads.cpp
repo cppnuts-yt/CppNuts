@@ -5,16 +5,16 @@
 #include <cassert>
 #include <algorithm>
 using namespace std;
+#define ulc unsigned long const
 
 void worker(int number) {
     cout << "I am Worker Thread No : " << number << endl;
 }
-
 int main() {
 
   vector<std::thread> workers;
 
-  unsigned long const hardware_threads = std::thread::hardware_concurrency();
+  ulc hardware_threads = std::thread::hardware_concurrency();
   
   std::cout << hardware_threads << endl;
   
