@@ -9,10 +9,6 @@ public:
     void doSomething(B* b);
 };
 
-void A::doSomething(B* b) {
-    b->sayHello();
-}
-
 class B {
 public:
     void sayHello() {
@@ -20,7 +16,9 @@ public:
     }
 };
 
-
+void A::doSomething(B* b) {
+    b->sayHello();
+}
 
 int main() {
     A a;
