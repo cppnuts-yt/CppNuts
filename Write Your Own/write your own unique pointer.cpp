@@ -61,10 +61,15 @@ int main() {
       std::cout << "up1 is empty!" << std::endl;
     }
 
+    if(up2) {
+        std::cout << "up2 is not empty!" << std::endl;=
+    }
+
     cout << "\n=== Move Assignment Example ===\n";
     UniquePointer<Demo> up3(new Demo());
     UniquePointer<Demo> up4(new Demo());
     up4 = std::move(up3);   // calls Move Assignment
+
     if(!up3) {
       std::cout << "up3 is empty!" << std::endl;
     }
