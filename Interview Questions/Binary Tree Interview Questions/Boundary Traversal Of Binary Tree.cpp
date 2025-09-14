@@ -40,14 +40,23 @@ class Solution {
             res.push_back(root->data);
     }
 public:
-    vector <int> boundary(Node *root) {
-        if(!root)return {};
-        vector<int> res;
-        res.push_back(root->data);
-        if(!root->left && !root->right) return res;
-        leftBoundary(root->left, res);
-        leafNodes(root, res);
-        rightBoundary(root->right, res);
-        return res;
-    }
+    vector<int> boundary(Node *root) {
+    if (!root) return {};
+    vector<int> res;
+    res.push_back(root->data);
+
+    if (!root->left && !root->right) return res;
+
+    // left boundary (excluding root and leaves)
+    leftBoundary(root->left, res);
+
+    // leaf nodes (only from left and right subtrees)
+    leafNodes(root->left, res);
+    leafNodes(root->right, res);
+
+    // right boundary (excluding root and leaves)
+    rightBoundary(root->right, res);
+
+    return res;
+}
 };
