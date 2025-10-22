@@ -18,16 +18,17 @@ public:
 };
 
 class Manager : public Employee {
-    int* teamSize;   // pointer data in derived
 public:
-    Manager(const string& n, int size) : Employee(n) {
-        teamSize = new int(size);
+    Manager(const string& n) : Employee(n) {
+        cout << "Manager " << *name << " created\n";
     }
-    ~Manager() { delete teamSize; }
+    ~Manager() override {
+        cout << "Manager " << *name << " destroyed\n";
+    }
 };
 
 int main() {
-    Employee* e = new Manager("Rupesh", 5);
+    Employee* e = new Manager("Rupesh");
     delete e;
     return 0;
 }
